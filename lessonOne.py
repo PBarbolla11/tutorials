@@ -87,7 +87,7 @@ define the wrong information. This is also why you were told to avoid using mult
 So how do we fix this? Well first, we could simply use alternating quotation styles to differentiate.'''
 
 
-#UNCOMMENT AND RUN# print("He said he's learning to code.")
+#UNCOMMENT AND RUN# print("He said hes learning to code.")
 
 
 
