@@ -75,7 +75,7 @@ is the definition of what OOP is.
 
 Let's take a closer look at Strings for a moment. Uncomment the next line and run the interpreter.'''
 
-#UNCOMMENT AND RUN#print('He said he's learning to code.')
+#UNCOMMENT AND RUN#print('He said hes learning to code.')
 
 '''Everything looks fine here, but the sentence is gramatically incorrect. Change hes to he's and re-run the IDE.
 UH-OH! We broke the program! But why did this happen? 
@@ -87,7 +87,7 @@ define the wrong information. This is also why you were told to avoid using mult
 So how do we fix this? Well first, we could simply use alternating quotation styles to differentiate.'''
 
 
-#UNCOMMENT AND RUN# print("He said hes learning to code.")
+#UNCOMMENT AND RUN# print("He said he's learning to code.")
 
 
 
