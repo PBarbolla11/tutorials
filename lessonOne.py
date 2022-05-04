@@ -210,14 +210,16 @@ variable as a string instead of an integer.
 Even though it was only three lines, the code above uses strings, integers, variables, and operators to acheive its function. Let's practice this a little more, but 
 place everything inside a function.'''
 
-def func():
-	x = "Joe"
-	y = 23
 
-	message = ("Your name is " + x + " and you are " + str(y) + " years old.")
-	print(message)
+#UNCOMMENT AND RUN THE FOLLOWING#
+# def func():
+# 	x = "Joe"
+# 	y = 23
 
-func()
+# 	message = ("Your name is " + x + " and you are " + str(y) + " years old.")
+# 	print(message)
+
+# func()
 
 '''
 def function():
@@ -225,4 +227,4 @@ def function():
 
 This is the standard format for how you will define a function. 
 
-The next lesson will cover functions more in-depth and will also begin to cover basic logic functions.
+The next lesson will cover functions more in-depth and will also begin to cover basic logic functions.'''
