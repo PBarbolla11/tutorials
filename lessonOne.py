@@ -61,7 +61,7 @@ can be utilized. One of the most common built-in functions that you will use is 
 print() is used anytime you want to display information directly to the terminal. In the case of print, you will place whatever information you would like to be 
 output to the terminal within the parenthesis - print(x)
 
-Below, write Hello World within a print function and run the IDE.
+Below, write "Hello World" within a print function and run the IDE (be sure to add the commas so it is recognized as a string).
 
 
 
@@ -104,8 +104,8 @@ the rest of the comments. The reason that this did not show as an error is exact
 
 #UNCOMMENT AND RUN# print("He's always saying \"Practice makes perfect\".")
 
-'''By putting a backslash in front of the quotes, you've told Python that this is just a regular expression, and that any function that it may normally have should be ignored.
-Regular Expressions can also have their own function in some cases. One of the most common examples in newline'''
+'''By putting a backslash in front of the quotes, you've told Python that this is just a regular expression, and that any function that it may normally have should be 
+ignored. Regular Expressions can also have their own function in some cases. One of the most common examples in newline.'''
 
 
 #UNCOMMENT AND RUN#print("Hello\nWorld!")
@@ -123,7 +123,7 @@ There are some things that Python inherently understands when they are typed int
 
 '''Python was able to run this expression natively because it was able to interpret these characters without definition. Unless you define them otherwise, any numbers
 that you type into Python will be read as Integers. 
-This can be with addition(+), subtraction(-), multiplication(*), division(/), and many other operators
+This can be with addition(+), subtraction(-), multiplication(*), division(/), and many other mathmatical operators.
 
 THE DIFFERENCE BETWEEN A STR() CHARACTER AND AN INT() CHARACTER IS THAT YOU CAN PERFORM ARITHMETIC TO INTEGERS
 Let's look at an example of what we mean.'''
@@ -136,23 +136,30 @@ Let's look at an example of what we mean.'''
 "TypeError: can only concantenate str (not "int") to str"
 What the heck does that mean?
 
-Concantenation is a fancy word used when we join objects instead of adding them. Because you can't perform arithmetic on a string, Python will concantenate those values instead.'''
+Concantenation is a fancy word used when we join objects instead of adding them. Because you can't perform arithmetic on a string, Python will concantenate those values 
+instead.'''
 
 #UNCOMMENT AND RUN#print("2" + "3")
 
-'''The result of this was 23 because the values were joined (concantenated) together instead of added. One interesting thing about this is that some operators can be used in 
-conjunction with strings'''
+'''The result of this was 23 because the values were joined (concantenated) together instead of added. One interesting thing about this is that some operators can be 
+used in conjunction with strings.'''
 
 
 #UNCOMMENT AND RUN#print(2 * "Hello")
 
 
-'''In this case, python reads this as Print --> 2x --> "Hello". You can use this with Regular Inspections to interesting effect'''
+'''In this case, python reads this as: 
+
+Print --> 2x --> "Hello" 
+
+You can use this with Regular Inspections to interesting effect.'''
 
 
 #print(2*("Hello\nWorld!"))
 
-'''Python reads this as Print --> 2x --> "Hello" --> newline --> "World!" --> "Hello" --> newline --> "World!"
+'''Python reads this as: 
+
+Print --> 2x --> "Hello" --> newline --> "World!" --> "Hello" --> newline --> "World!"
 
 While this last example may not have much practical use, concantenations are particularly helpful when working with...
 
@@ -172,9 +179,13 @@ Look at the following example:'''
 
 
 '''We defined x and y by setting them equal to a string, but they can be set to many different types of objects. 
-Python saw that these were variables were assigned strings and concantenated the values that were assigned. Notice, however, that the strings are mashed
-together without any space. This is because Python directly concantenates the values that are given. So how can we add spaces to make it more readable?
-There are two main ways to do this:'''
+
+NOTE: "=" and "==" are two completely different operators! = sets the value of one object to something else, while == is a logical operator that check if something
+is equal to something else. We wil explore the == operator in the next lesson, so stick to = for now.
+
+Python saw the = operator and understood that these were variables were assigned strings. It then concantenated the values that were assigned to the variables. 
+Notice, however, that the strings are mashedtogether without any space. This is because Python directly concantenates the values that are given. 
+So how can we add spaces to make it more readable? There are two main ways to do this:'''
 
 #UNCOMMENT AND RUN THE FOLLOWING#
 # print("Hello " + "World!")
@@ -207,9 +218,22 @@ Below is an example of type conversion, utilizing the other topics covered earli
 '''Our y variable was an integer, which would normally not be able to be concantenated to the strings, but by wrapping the variable in str(), we told Python to read the
 variable as a string instead of an integer.
 
-Even though it was only three lines, the code above uses strings, integers, variables, and operators to acheive its function. Let's practice this a little more, but 
-place everything inside a function.'''
+Now, let's learn how to do all of this more efficiently. We can do this by using an f-string, which is shorthand for formatted string. An f-string takes values and 
+automatically formats them, handling differing object types and accounts for whitespace. Run the following code and see what happens.
+'''
 
+#UNCOMMENT AND RUN THE FOLLOWING#
+#x = "Joe"
+#y = 23
+
+#print(f"Your name is {x} and you are {y} years old.")
+
+'''Way easier, right? With an f-string, all we had to do was insert braces with the variable name in the same place we would have normally placed the value. This
+not only saves a bunch of time, but also allows you to do things like write a string before you know what some of the values will be
+
+Even though it was only three lines, the code above uses strings, integers, variables, and operators to acheive its function. Let's practice this a little more, but 
+place everything inside a function.
+'''
 
 #UNCOMMENT AND RUN THE FOLLOWING#
 # def func():
@@ -221,10 +245,5 @@ place everything inside a function.'''
 
 # func()
 
-'''
-def function():
-	pass
-
-This is the standard format for how you will define a function. 
-
-The next lesson will cover functions more in-depth and will also begin to cover basic logic functions.'''
+'''Pretty cool! We're not going to cover the formatting of functions here, though. The next lesson will cover functions more in-depth and will also begin to cover 
+basic logic functions.'''
