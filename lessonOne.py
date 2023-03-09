@@ -31,7 +31,6 @@ First, you would have to describe what an apple is to the alien. Once it underst
 you are doing with a programming language. The apple would be the object, and eating would be the function oriented around the object. Let's begin the first lesson and
 explore this further.
 
-
 #################################################################################################################################################################
 #################################################################################################################################################################
 #########################################################                     PART ONE                      #####################################################
@@ -55,14 +54,15 @@ wrote and executed a fully functional program. So let's start diving into exactl
 Before we ge ino functions, let's first talk about objects.
 
 If you remember from the beginning of the lesson, we said that you need to define an object before Python is able to perform a function on it. So how did we tell
-Python what our object was? Take a second about it and think before moving on.'''
+Python what our object was? Take a second about it and think before moving on.
+UNCOMMENT AND RUN THE FOLLOWING CODE'''
 
-#Uncomment and run the following code:
 
 #Hello World!
 
 
 '''As you can see, when this code is run, the terminal shows "SyntaxError: invalid syntax". What does that mean? 
+
 Syntax refers to the way that the program is written and read by the interpreter. As is the case with many human languages, programming languages may be written and read
 in many different ways, as well. While you don't have cases where code is written right to left such as languages like Arabic or Hebrew, the way you structure code may
 be very different.Python, and many other programming languages, read just like English, from left to right and top to bottom.
@@ -77,11 +77,9 @@ object it is.
 In the case of words or sentences, the type of object that we want to define is called a "String". This simply means a string of characters that are read together.
 These characters can be either letters or numbers. Strings are defined by surrounding characters with either single quotes ' ' or double quotes " ".
 
-Let's look at an example. Uncomment the following line and run the IDEw
+Let's look at an example. 
 Remember: You can also comment and uncomment by highlighting text and pressing ctrl + / OR cmd + /
-
-
-DON'T FORGET TO RE-COMMENT AFTERWARDS'''
+UNCOMMENT AND RUN THE FOLLOWING CODE AND DON'T FORGET TO RE-COMMENT AFTERWARDS'''
 
 #"Hello World!"
 
@@ -90,7 +88,6 @@ DON'T FORGET TO RE-COMMENT AFTERWARDS'''
 had the color of the text change once quotes were placed, as well.
 
 The quotes we added essenially work as an identifier to tell Python "Treat this as a string". You can see this demonstrated below.
-
 UNCOMMENT AND RUN THE FOLLOWING CODE'''
 
 #print(type("Hello World!"))
@@ -123,7 +120,6 @@ Again, it may seem like a very trivial thing, just printing a few words, but def
 Ok, feeling good? Take a break and stretch if you need to. Always remember to be aware of your posture and not sitting in one spot for extended periods of time!
 
 Alright, let's dive into strings a bit and learn more about how they work. 
-
 UNCOMMENT AND RUN THE FOLLOWING CODE'''
 
 #print('He said hes learning to code.')
