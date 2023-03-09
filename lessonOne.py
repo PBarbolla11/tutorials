@@ -49,12 +49,17 @@ UNCOMMENT AND RUN THE FOLLOWING CODE'''
 
 '''Congratulations! You just wrote your first Python program! It may seem silly, since when we think of "writing a program" we imagine something robust with hundreds
 or thousands of line of code, but this isn't the case. Remember, OOP is executing funcitons based on objects, which is exactly what you just did. By definition, you
-wrote and executed a fully functional program. So let's start diving into exactly what we just did and what it all means.
+wrote and executed a fully functional program. 
 
-Before we ge ino functions, let's first talk about objects.
+Using the alien example, think of what we just typed like eat(apple), where eat is the function, and apple is the object. Here, print() was the function, and the object
+we told Python to print was "Hello World!". The function print() was oriented around our object "Hello World!", hence Object Oriented Programming.
 
-If you remember from the beginning of the lesson, we said that you need to define an object before Python is able to perform a function on it. So how did we tell
-Python what our object was? Take a second about it and think before moving on.
+So let's start diving into exactly what we just did and what it all means.
+
+Before we ge into functions, let's first talk about objects.
+
+As we said, you need to define an object before Python is able to perform a function on it. So how did we tell Python what our object was? Take a second to think about 
+how we may have done it before moving on.
 UNCOMMENT AND RUN THE FOLLOWING CODE'''
 
 
@@ -65,13 +70,14 @@ UNCOMMENT AND RUN THE FOLLOWING CODE'''
 
 Syntax refers to the way that the program is written and read by the interpreter. As is the case with many human languages, programming languages may be written and read
 in many different ways, as well. While you don't have cases where code is written right to left such as languages like Arabic or Hebrew, the way you structure code may
-be very different.Python, and many other programming languages, read just like English, from left to right and top to bottom.
+be very different. Python, and many other programming languages, read just like English, from left to right and top to bottom. In Lesson Two, we will explore syntax 
+much more in depth when we talk about functions.
 
 You'll notice that only the word "Hello" was highlighted here and not "World!". This is because in this case, Python has read the whitespace between these characters
 as meaning that they are separate items; this is because we have not defined what these characters mean. As soon as Python read the first undefined object, the 
 program crashed and never made it to the next word.
 
-Python automatically understands the type of some objects, but many things that are typed into Python require definition, meaning you have to tell Python what type of 
+Python automatically understands the type of some objects, but other things that are typed into Python require definition, meaning you have to tell Python what type of 
 object it is.
 
 In the case of words or sentences, the type of object that we want to define is called a "String". This simply means a string of characters that are read together.
@@ -85,9 +91,9 @@ UNCOMMENT AND RUN THE FOLLOWING CODE AND DON'T FORGET TO RE-COMMENT AFTERWARDS''
 
 
 '''This time, we had no output from the terminal. This is because Python recognized what you typed as a String. Depending on which IDE you are using, you may have also
-had the color of the text change once quotes were placed, as well.
+had the color of the text change once quotes were placed.
 
-The quotes we added essenially work as an identifier to tell Python "Treat this as a string". You can see this demonstrated below.
+The quotes we added essenially work as an identifier to tell Python "treat this as a string". You can see this demonstrated below.
 UNCOMMENT AND RUN THE FOLLOWING CODE'''
 
 #print(type("Hello World!"))
@@ -97,15 +103,16 @@ UNCOMMENT AND RUN THE FOLLOWING CODE'''
 thing to note is Python realized it was now a String, represented by 'str'. By adding the correct identifier, Python was able to determine the object type. We will 
 discuss this in more detail in a bit.
 
-So Python recognized what we typed as a String, but why was nothing done with it? This is because we did not provide any function to operate the object. Remember, in 
+So Python recognized what we typed as a String, but why was nothing done with it? This is because we did not provide any function to use the object. Remember, in 
 Object Oriented Programming (OOP), once you define an object you need to tell Python what to do with that object. Think of the eat(apple) metaphor from earlier.
 
 Depending on what you are trying to acheive, you may need to define a function yourself, but there are a lot of functions that are built directly into Python that 
-can be utilized. One of the most common built-in functions that you will use is print(). print() is used anytime you want to display information directly to the terminal. 
-print() is used not only to output the results of functions, but is also invaluable for providing you with important information about how your code is run, like how we 
-used type() to view the object type of our string eariler.
+can be utilized. One of the most common built-in functions that you will use, and the one we've been using so far, is print(). print() is used anytime you want to 
+display information directly to the terminal. print() is used not only to output the results of functions, but is also invaluable for providing you with important 
+information about how your code is run, like how we used type() to view the object type of our string eariler.
 
-In the case of print, you will place whatever information you would like to be output to the terminal within the parenthesis - print(x)
+In the case of print, you will place whatever information you would like to be output to the terminal (the object) within the parenthesis, such as print(x). The 
+parentheses are another type of container and tell the function to use whatever is in those parentheses when it executes.
 
 Below, try writing the code yourself to print "Hello World!" to the terminal.
 
@@ -117,7 +124,8 @@ WRITE YOUR FUNCTION BELOW THEN COMMENT IT OUT AFTER RUNNING IT'''
 '''Congratulations! You've just written your first Python program!
 Again, it may seem like a very trivial thing, just printing a few words, but defining objects and performing functions on them is the definition of what OOP is.
 
-Ok, feeling good? Take a break and stretch if you need to. Always remember to be aware of your posture and not sitting in one spot for extended periods of time!
+Ok, feeling good? Take a break and stretch if you need to. Always remember to be aware of your posture and not don't in one spot for extended periods of time without 
+moving!
 
 Alright, let's dive into strings a bit and learn more about how they work. 
 UNCOMMENT AND RUN THE FOLLOWING CODE'''
@@ -289,10 +297,10 @@ UNCOMMENT AND RUN THE FOLLOWING CODE'''
       
 '''Just like in math class, we assigned numerical values to variables, then were able to add those variables together to produce a sum. Unlike math class, however, is 
 how the result is written. Notice here that we wrote "c = a + b" rather than "a + b = c". This is because Python needs to have an object before something can be assigned
-to it. You need to set the variable before it can have a value. Think again about that barrel of water; you wouldn't be able to put the water inside if you didn't 
-already have the barrel ready.
+to it. You need to set the variable before it can be assigned a value. Think again about that barrel of water; you wouldn't be able to put the water inside if you didn't 
+already have the barrel ready. The same concept applies here, so because Python reads left to right we need to set the variable to the left of its value.
 
-We can also assign different values, such as strings, to variables.
+We can also assign other object types, such as strings, to variables.
 UNCOMMENT AND RUN THE FOLLOWING CODE'''
 
 
@@ -304,11 +312,15 @@ UNCOMMENT AND RUN THE FOLLOWING CODE'''
 
 
 '''Python assigned the strings as values for the variables then concantenated those values together. Notice, however, that the strings are mashedtogether without any 
-space. This is because as demonstrated earlier, Python directly concantenates the values that are given. 
+space. This is because, as demonstrated earlier, Python directly concantenates the values that are given. 
+
 So how can we add spaces to make it more readable? There are two main ways to do this:
 UNCOMMENT AND RUN THE FOLLOWING CODE'''
 
 # print("Hello " + "World!")
+
+
+
 
 # x = "Hello"
 # y = "World!"
@@ -317,8 +329,8 @@ UNCOMMENT AND RUN THE FOLLOWING CODE'''
 
 
 '''With the first method, we did what we covered earlier and simply added a space to the end of the first string literal. This could also have been done by 
-"Hello" + " World!" since both literals are butted together no matter what. But what about the second example? Because there was no room to add whitespace here, we 
-needed to concantenate an additional whitespace.
+"Hello" + " World!" since both literals are butted together no matter what. But what about the second example? Assume we took these strings as input and weren't able
+to add whitespace to them. Because of this, we needed to concantenate an additional whitespace between them.
 
 IMPORTANT!: 
 " " (quotes with a space) is whitespace, while "" (quotes with no space) is an empty string. This is because, as we mentioned, whitespace is treated as part of the
@@ -330,8 +342,9 @@ UNCOMMENT AND RUN THE FOLLOWING CODE'''
 '''Notice how there was no space between the outer strings? This is because the string in the middle had no value, so nothing was printed in that space.
 
 
-Now, we know we can't combine different object types, but sometimes you will need to! So what do we do? You can perform type conversion on some objects in order to 
-change their class.
+Now, we know we can't combine different object types, but sometimes you will receive data that you need to combine, but as differing object types. So what do we do? 
+You can perform type conversion on some objects in order to change their class.
+
 Below is an example of type conversion, utilizing the other topics covered earlier. Refer to the notes if you have questions about the function.'''
 
 
@@ -343,7 +356,7 @@ Below is an example of type conversion, utilizing the other topics covered earli
 # print("Your name is " + x + " and you are " + str(y) + " years old.")
 
 
-'''Our y variable was an integer, which would normally not be able to be concantenated to the strings, but by wrapping the variable in str(), we overrode Python's 
+'''Our y variable was an integer, which would normally not be able to be concantenated to the strings, but by wrapping the variable in str() we overrode Python's 
 inherent classification and told it to read the variable as a string instead of an integer. You can do the same thing with integers.
 UNCOMMENT AND RUN THE FOLLOWING CODE'''
       
