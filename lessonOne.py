@@ -8,17 +8,18 @@
 
 We will also cover basic functions and how they operate
 
-Before all that, let's talk about comments. All of the text in this section so far has been within a comment, so Python will skip it when rendering.
-The multi-quote style that I'm using should NOT be used at this time. Instead, use the more common method of adding # to the beginning of a line.
+Before all that, let's talk about comments. All of the text in this section so far has been within a comment, so Python will skip it when rendering. This is so you can
+take the entirety of this code and place it directly into an IDE to run it with minimal editing. The multi-quote style that I'm using should NOT be used at this time. 
+Instead, use the more common method of adding # to the beginning of a line.
 
 NORMAL FUNCTIONS DO NOT WORK IN COMMENTS, so you can freely type whatever you like. This is a great way to notate your code for easy reference later.
 
-For now, leave any notes in multi-quotes alone, and only worry about lines commented out with #
+For now, leave any notes in multi-quotes alone, and only worry about lines commented out with #. You will be explicitly instructed where and when to uncomment code.
 
 INTRODUCTION 
 
-What is object oriented programming (OOP)? To be redundant, it simply means programming that is oriented around objects. You define a type of object, then perform functions
-based around that object. So what does all of this mean? Well, let's look at this using a metaphor.
+What is object oriented programming (OOP)? To be redundant, it simply means programming that is oriented around objects. You define a type of object, then perform 
+functions based around that object. So what does all of this mean? Well, let's look at this using a metaphor.
 
 Imagine you are talking to an alien that does not understand your language or anything about your world. For some reason, you need to tell this alien that it needs to
 eat an apple. So how would you do this if the alien didn't know what apples or eating were? You would have to define both of these things so they would understand.
@@ -54,95 +55,137 @@ Python what our object was? Take a second about it and think before moving on.''
 #Hello World!
 
 
-'''As you can see, when this is run the terminal shows "SyntaxError: invalid syntax". What does that mean? 
-Syntax refers to the way that the program is written. Python, and many other programming languages, read just like you, from left to right and top to bottom.
+'''As you can see, when this code is run, the terminal shows "SyntaxError: invalid syntax". What does that mean? 
+Syntax refers to the way that the program is written and read by the interpreter. As is the case with many human languages, programming languages may be written and read
+in many different ways, as well. While you don't have cases where code is written right to left such as languages like Arabic or Hebrew, the way you structure code may
+be very different.Python, and many other programming languages, read just like English, from left to right and top to bottom.
+
 You'll notice that only the word "Hello" was highlighted here and not "World!". This is because in this case, Python has read the whitespace between these characters
-as meaning that they are separate items; this is because we have not defined what these characters mean. As soon as Python read the first undefined variable, the 
+as meaning that they are separate items; this is because we have not defined what these characters mean. As soon as Python read the first undefined object, the 
 program crashed and never made it to the next word.
+
 Python automatically understands the type of some objects, but many things that are typed into Python require definition, meaning you have to tell Python what type of 
 object it is.
 
-'''
 In the case of words or sentences, the type of object that we want to define is called a "String". This simply means a string of characters that are read together.
 These characters can be either letters or numbers. Strings are defined by surrounding characters with either single quotes ' ' or double quotes " ".
 
 Let's look at an example. Uncomment the following line and run the IDEw
-Note: You can also comment and uncomment by highlighting text and pressing ctrl + / OR cmd + /
+Remember: You can also comment and uncomment by highlighting text and pressing ctrl + / OR cmd + /
 
 
-DON'T FORGET TO RE-COMMENT AFTERWARDS"""
-
-
+DON'T FORGET TO RE-COMMENT AFTERWARDS'''
 
 #"Hello World!"
 
 
-
-
 '''This time, we had no output from the terminal. This is because Python recognized what you typed as a String. Depending on which IDE you are using, you may have also
-had the color of the text change, as well.
+had the color of the text change once quotes were placed, as well.
 
-So Python recognized what we typed as a String, but why was nothing done with it? This is because we did not provide any function to operate the object.
+The quotes we added essenially work as an identifier to tell Python "Treat this as a string". You can see this demonstrated below.
+
+UNCOMMENT AND RUN THE FOLLOWING CODE'''
+
+#print(type("Hello World!"))
+
+
+'''Looking at the terminal, the output was <class 'str'>. Now, don't worry yet about what a class is since we have a lot to cover before we ge to those. The important
+thing to note is Python realized it was now a String, represented by 'str'. By adding the correct identifier, Python was able to determine the object type. We will 
+discuss this in more detail in a bit.
+
+So Python recognized what we typed as a String, but why was nothing done with it? This is because we did not provide any function to operate the object. Remember, in 
+Object Oriented Programming (OOP), once you define an object you need to tell Python what to do with that object. Think of the eat(apple) metaphor from earlier.
+
 Depending on what you are trying to acheive, you may need to define a function yourself, but there are a lot of functions that are built directly into Python that 
-can be utilized. One of the most common built-in functions that you will use is print().
+can be utilized. One of the most common built-in functions that you will use is print(). print() is used anytime you want to display information directly to the terminal. 
+print() is used not only to output the results of functions, but is also invaluable for providing you with important information about how your code is run, like how we 
+used type() to view the object type of our string eariler.
 
-print() is used anytime you want to display information directly to the terminal. In the case of print, you will place whatever information you would like to be 
-output to the terminal within the parenthesis - print(x)
+In the case of print, you will place whatever information you would like to be output to the terminal within the parenthesis - print(x)
 
-Below, write "Hello World" within a print function and run the IDE (be sure to add the commas so it is recognized as a string).
+Below, try writing the code yourself to print "Hello World!" to the terminal.
 
+WRITE YOUR FUNCTION BELOW THEN COMMENT IT OUT AFTER RUNNING IT'''
 
-
-#write the function here#
-
-
-
-Congratulations! You've just written your first Python program!
-It may seem like a very trivial thing, just printing a few words, but that is the basis of what Object Oriented Programming is. Taking objects and performing functions
-is the definition of what OOP is.
-
-Let's take a closer look at Strings for a moment. Uncomment the next line and run the interpreter.'''
-
-#UNCOMMENT AND RUN#print('He said hes learning to code.')
-
-'''Everything looks fine here, but the sentence is gramatically incorrect. Change hes to he's and re-run the IDE.
-UH-OH! We broke the program! But why did this happen? 
-
-When Python reads anything that is "nested", it will look for opening and closing characters. When using single-quotes, Python read the first ' as the opening character,
-then interpreted the next ' it came across as the closing character. IT IS IMPORTANT TO BE CONSITENT WITH WHICH TYPES YOU USE. By mixing quotes, you can inadvertently
-define the wrong information. This is also why you were told to avoid using multi-quote comments in the beginning of this lesson.
-
-So how do we fix this? Well first, we could simply use alternating quotation styles to differentiate.'''
+# Code Goes Here
 
 
-#UNCOMMENT AND RUN# print("He said he's learning to code.")
+'''Congratulations! You've just written your first Python program!
+Again,it may seem like a very trivial thing, just printing a few words, but defining objects and performing functions on them is the definition of what OOP is.
+
+Ok, feeling good? Take a break and stretch if you need to. Always remember to be aware of your posture and not sitting in one spot for extended periods of time!
+
+Alright, let's dive into strings a bit and learn more about how they work. 
+
+UNCOMMENT AND RUN THE FOLLOWING CODE'''
+
+#print('He said hes learning to code.')
+
+'''Everything looks fine here and the function runs, but the sentence is gramatically incorrect. Let's change hes to he's and re-run the function.
+UNCOMMENT AND RUN THE FOLLOWING CODE'''
+
+#print('He said he's learning to code.')
+
+'''UH-OH! We broke the program! But why did this happen? 
+
+When Python reads anything within a container, such as quotes, it will look for opening and closing characters that are the same. When using single-quotes, Python read 
+the first ' as the opening character, then interpreted the next ' it came across as the closing character. IT IS IMPORTANT TO BE CONSITENT WITH WHICH TYPES YOU USE. 
+By mixing quotation types, you can inadvertently define the wrong information. This is also why you were told to avoid using multi-quote comments in the beginning of 
+this lesson, as they can be hard to keep track of and may break large sections of code.
+
+So how do we fix this? Well the first option is we could simply use alternating quotation styles to differentiate.
+UNCOMMENT AND RUN THE FOLLOWING CODE'''
+
+
+#print("He said he's learning to code.")
+
+
+'''Here, double quotes were used to define where the string began and ended, so one single quote in the middle was not interpreted as a container. This would even work
+with multiple single quotes.
+UNCOMMENT AND RUN THE FOLLOWING CODE'''
+
+
+print("He's always saying there's always something to learn)
+      
+
+'''Again, the single quotes were contained within double quotes, so we were fine. But what if for some reason we needed to use both types? Let's look at an example
+UNCOMMENT AND RUN THE FOLLOWING CODE'''
+      
+#print("She's always saying "Practice makes perfect".")
+
+
+'''Obviously, writing the sentence like this doesn't work. So how can we get around this? One way is using what is known as a Regular Expression. 
+Regular Expressions are denoted by the "\" character, and are usually followed by a letter or symbol denoting their specific function
+UNCOMMENT AND RUN THE FOLLOWING CODE'''
+
+#print("He's always saying \"Practice makes perfect\".")
+
+'''See how that worked? When you type a string into python, the actual text you type is referred to as the "string literal", because this is what you actually typed. The
+"string value" is what is actually read as the string object.
+
+The "\" character here essentially tells Python "This is still the string literal, please don't treat the symbol as a special character", so that qoute will now be read
+as being part of the string literal. You may not use this feature too frequently, but one you will undoubtedly use often is \n or newline.
+UNCOMMENT AND RUN THE FOLLOWING CODE'''
+
+
+#print("Hello\nWorld!")
+
+'''You'll see here that the output was printed onto two lines. Adding the newline regular expression told the IDE that you want whatever follows to be printed on a 
+new line. You can place this anywere in the string and repeat the character multiple times for additional spacing.
+UNCOMMENT AND RUN THE FOLLOWING CODE'''
+
+#print("Hello\n\n\nWorld!")
+      
+'''The string was now printed with three lines separating them. Pretty cool, right? We'll explore string manipulation more in-depth later but, for now, let's take a look
+at some other object types!
 
 
 
-'''By running that command, you can see that the text was now output correctly. But what if both types of quotes need to be used?'''
-
-
-#UNCOMMENT AND RUN# print("He's always saying "Practice makes perfect".")
-
-
-'''Notice that this doesn't work. So how can we get around this? One way is using what is known as a Regular Expression. 
-Regular Expressions are denoted by the "\" character. As you can see, Python read the character immediately following the \" differently than
-the rest of the comments. The reason that this did not show as an error is exactly its function. '''
-
-
-#UNCOMMENT AND RUN# print("He's always saying \"Practice makes perfect\".")
-
-'''By putting a backslash in front of the quotes, you've told Python that this is just a regular expression, and that any function that it may normally have should be 
-ignored. Regular Expressions can also have their own function in some cases. One of the most common examples in newline.'''
-
-
-#UNCOMMENT AND RUN#print("Hello\nWorld!")
-
-'''You'll see here that the output was printed onto two lines. Adding the newline regular expression told the IDE that you want whatever follows to be printed on a new line.
-
-
-
-PART TWO
+#################################################################################################################################################################
+#################################################################################################################################################################
+#########################################################                     PART TWO                      #####################################################
+#################################################################################################################################################################
+#################################################################################################################################################################
 
 There are some things that Python inherently understands when they are typed into the IDE. Some of the most common examples are Integers and Operators'''
 
