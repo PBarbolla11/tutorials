@@ -16,7 +16,11 @@ NORMAL FUNCTIONS DO NOT WORK IN COMMENTS, so you can freely type whatever you li
 
 For now, leave any notes in multi-quotes alone, and only worry about lines commented out with #. You will be explicitly instructed where and when to uncomment code.
 
-INTRODUCTION 
+#################################################################################################################################################################
+#################################################################################################################################################################
+#########################################################                  Introduction                   #######################################################
+#################################################################################################################################################################
+#################################################################################################################################################################
 
 What is object oriented programming (OOP)? To be redundant, it simply means programming that is oriented around objects. You define a type of object, then perform 
 functions based around that object. So what does all of this mean? Well, let's look at this using a metaphor.
@@ -29,7 +33,11 @@ you are doing with a programming language. The apple would be the object, and ea
 explore this further.
 
 
-PART ONE
+#################################################################################################################################################################
+#################################################################################################################################################################
+#########################################################                     PART ONE                      #####################################################
+#################################################################################################################################################################
+#################################################################################################################################################################
 
 In order to help illustrate the concept we just learned, let's run our first program!
 
@@ -177,7 +185,7 @@ UNCOMMENT AND RUN THE FOLLOWING CODE'''
 #print("Hello\n\n\nWorld!")
       
 '''The string was now printed with three lines separating them. Pretty cool, right? We'll explore string manipulation more in-depth later but, for now, let's take a look
-at some other object types!
+at some other object types!'''
 
 
 
@@ -187,7 +195,10 @@ at some other object types!
 #################################################################################################################################################################
 #################################################################################################################################################################
 
-There are some things that Python inherently understands when they are typed into the IDE. Some of the most common examples are Integers and Operators'''
+'''As we stated earlier, many different programming languges have different syntax that allows them to be read, andi n many of these languages object types have to be
+explicitly defined. Python tries to do most of this itself, which is a main reason why people view it as a more friendly syntax; it tries to determine object types
+automatically as they are typed. When we defined what a string was, it really was more of us telling Python which type of object it wasn't, since many are automatically
+defined.'''
 
 
 #UNCOMMENT AND RUN#print(2+2)
