@@ -15,30 +15,58 @@ NORMAL FUNCTIONS DO NOT WORK IN COMMENTS, so you can freely type whatever you li
 
 For now, leave any notes in multi-quotes alone, and only worry about lines commented out with #
 
+INTRODUCTION 
 
-Let's start the lesson by printing "Hello World!" to the terminal.
-Now, uncomment the next line by removing the # and run the IDE. Look to the terminal to see what the result is.'''
+What is object oriented programming (OOP)? To be redundant, it simply means programming that is oriented around objects. You define a type of object, then perform functions
+based around that object. So what does all of this mean? Well, let's look at this using a metaphor.
 
+Imagine you are talking to an alien that does not understand your language or anything about your world. For some reason, you need to tell this alien that it needs to
+eat an apple. So how would you do this if the alien didn't know what apples or eating were? You would have to define both of these things so they would understand.
 
-
-#Hello World!
-
-
-
-"""As you can see, when this is run the terminal shows "SyntaxError: invalid syntax". What does that mean? 
-Syntax refers to the way that the program is written. Python, and many other programming languages, read just like you, from left to right and top to bottom.
-You'll notice that only the word "Hello" was highlighted here and not "World!". This is because in this case, Python has read the whitespace between these characters
-as meaning that they are separate items; this is because we have not defined what these characters mean.
-Many things that are typed into Python require definition, meaning you have to tell the interpreter what type of object it is.
+First, you would have to describe what an apple is to the alien. Once it understands that, you would then have to describe what eating means. This is more or less what 
+you are doing with a programming language. The apple would be the object, and eating would be the function oriented around the object. Let's begin the first lesson and
+explore this further.
 
 
 PART ONE
 
+In order to help illustrate the concept we just learned, let's run our first program!
 
+UNCOMMENT AND RUN THE FOLLOWING CODE
+Here's a tip: You can comment or uncomment a line by adding and removing the # symbol from the beginning of the line, but you can also select the line you are working
+on by triple clicking, then hit Ctrl + / to comment or uncomment the whole line!'''
+
+# IMPORTANT!!!! REMEMBER TO RE-COMMENT THE CODE AFTER YOU RUN IT! IF YOU LEAVE CODE UNCOMMENTED IN THIS LESSON IT WILL BREAK THE OTHER EXAMPLES. DO THIS EACH TIME!
+
+#print("Hello World!")
+
+'''Congratulations! You just wrote your first Python program! It may seem silly, since when we think of "writing a program" we imagine something robust with hundreds
+or thousands of line of code, but this isn't the case. Remember, OOP is executing funcitons based on objects, which is exactly what you just did. By definition, you
+wrote and executed a fully functional program. So let's start diving into exactly what we just did and what it all means.
+
+Before we ge ino functions, let's first talk about objects.
+
+If you remember from the beginning of the lesson, we said that you need to define an object before Python is able to perform a function on it. So how did we tell
+Python what our object was? Take a second about it and think before moving on.'''
+
+#Uncomment and run the following code:
+
+#Hello World!
+
+
+'''As you can see, when this is run the terminal shows "SyntaxError: invalid syntax". What does that mean? 
+Syntax refers to the way that the program is written. Python, and many other programming languages, read just like you, from left to right and top to bottom.
+You'll notice that only the word "Hello" was highlighted here and not "World!". This is because in this case, Python has read the whitespace between these characters
+as meaning that they are separate items; this is because we have not defined what these characters mean. As soon as Python read the first undefined variable, the 
+program crashed and never made it to the next word.
+Python automatically understands the type of some objects, but many things that are typed into Python require definition, meaning you have to tell Python what type of 
+object it is.
+
+'''
 In the case of words or sentences, the type of object that we want to define is called a "String". This simply means a string of characters that are read together.
 These characters can be either letters or numbers. Strings are defined by surrounding characters with either single quotes ' ' or double quotes " ".
 
-Let's look at an example. Uncomment the following line and run the IDE
+Let's look at an example. Uncomment the following line and run the IDEw
 Note: You can also comment and uncomment by highlighting text and pressing ctrl + / OR cmd + /
 
 
