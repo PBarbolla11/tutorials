@@ -165,7 +165,7 @@ UNCOMMENT AND RUN THE FOLLOWING CODE'''
 Regular Expressions are denoted by the "\" character, and are usually followed by a letter or symbol denoting their specific function
 UNCOMMENT AND RUN THE FOLLOWING CODE'''
 
-#print("He's always saying \"Practice makes perfect\".")
+#print("She's always saying \"Practice makes perfect\".")
 
 '''See how that worked? When you type a string into python, the actual text you type is referred to as the "string literal", because this is what you actually typed. The
 "string value" is what is actually read as the string object.
