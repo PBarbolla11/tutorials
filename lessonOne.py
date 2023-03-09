@@ -195,64 +195,112 @@ at some other object types!'''
 #################################################################################################################################################################
 #################################################################################################################################################################
 
-'''As we stated earlier, many different programming languges have different syntax that allows them to be read, andi n many of these languages object types have to be
-explicitly defined. Python tries to do most of this itself, which is a main reason why people view it as a more friendly syntax; it tries to determine object types
+'''As we stated earlier, many different programming languges have different syntax that allows them to be read, and in many of these languages object types have to be
+explicitly defined. Python tries to do most of this itself, which is a main reason why people view it as a more friendly language; it tries to determine object types
 automatically as they are typed. When we defined what a string was, it really was more of us telling Python which type of object it wasn't, since many are automatically
-defined.'''
+defined. Let's look at an example.
+UNCOMMENT AND RUN THE FOLLOWING CODE'''
 
 
-#UNCOMMENT AND RUN#print(2+2)
+#print(2+2)
+      
 
 '''Python was able to run this expression natively because it was able to interpret these characters without definition. Unless you define them otherwise, any numbers
-that you type into Python will be read as Integers. 
-This can be with addition(+), subtraction(-), multiplication(*), division(/), and many other mathmatical operators.
+that you type into Python will be read as Integers. Most languages will natively understand numbers to be integers.
 
-THE DIFFERENCE BETWEEN A STR() CHARACTER AND AN INT() CHARACTER IS THAT YOU CAN PERFORM ARITHMETIC TO INTEGERS
-Let's look at an example of what we mean.'''
+THE PRIMARY DIFFERENCE BETWEEN A STR() CHARACTER AND AN INT() CHARACTER IS THAT YOU CAN PERFORM ARITHMETIC TO INTEGERS
+This can be done with addition(+), subtraction(-), multiplication(*), division(/), and other mathmatical operators. Let's look at an example of the difference.
+UNCOMMENT AND RUN THE FOLLOWING CODE'''
 
-#UNCOMMENT AND RUN THE FOLLOWING#
 # print(2 + 3)
 # print("2" + 3)
+      
 
-'''The first expression works correctly, but the second one throws raises a TypeError Exception
-"TypeError: can only concantenate str (not "int") to str"
+'''The first expression works correctly, but the second one raises a TypeError Exception:
+
+      "TypeError: can only concantenate str (not "int") to str"
+
 What the heck does that mean?
 
-Concantenation is a fancy word used when we join objects instead of adding them. Because you can't perform arithmetic on a string, Python will concantenate those values 
-instead.'''
+Because we had an integer and a string, Python tried to mathmatically add the two values, which obviously would not work due to their conflicting object types.
+UNCOMMENT AND RUN THE FOLLOWING CODE'''
 
-#UNCOMMENT AND RUN#print("2" + "3")
+      #print(type("two"))
+      #print(type(2))
 
-'''The result of this was 23 because the values were joined (concantenated) together instead of added. One interesting thing about this is that some operators can be 
-used in conjunction with strings.'''
+'''When we call up the objects' types, we can see that "two" is recognized as a string, and "2" is recognized as an integer.
+So what would happen if we place quotes around both of the integers?
+UNCOMMENT AND RUN THE FOLLOWING CODE'''
+      
+      #print("2"+"3")
 
 
-#UNCOMMENT AND RUN#print(2 * "Hello")
+'''Here, we received an output of "23" because, since Python cannot perform arithmetic on strings, the actual string literals were added together. This is called
+Concantenation. Concantenation is a fancy word used when we join objects instead of mathmatically adding them. Because you can't perform arithmetic on a string, 
+Python will concantenate those values instead.
+
+Concantenation can help you to format strings by combining values into one output. We will look at some more realistic examples of this is just a bit, but here's a quick
+example that illustrates this concept.
+UNCOMMENT AND RUN THE FOLLOWING CODE'''
+
+#print("Hello " + "World!")
+      
+'''Here, we added the values of the string together but added a space between Hello and the quotes. Python took this whitespace as a part of the string literal and 
+printed it out attached to Hello. This is how we were able to provide a space between the first and second literals. We'll do a few more examples in just a moment but, 
+before we continue, are there any times you can combine mathmatical operators and strings? There sure are!
+UNCOMMENT AND RUN THE FOLLOWING CODE'''
 
 
-'''In this case, python reads this as: 
+#print(2 * "Hello")
+
+
+'''In this case, python reads this code as: 
 
 Print --> 2x --> "Hello" 
 
-You can use this with Regular Inspections to interesting effect.'''
+You can think of this as "Print Hello twice". You can use this with Regular Inspections such as \n to interesting effect.
+UNCOMMENT AND RUN THE FOLLOWING CODE'''
 
 
 #print(2*("Hello\nWorld!"))
+      
 
 '''Python reads this as: 
 
-Print --> 2x --> "Hello" --> newline --> "World!" --> "Hello" --> newline --> "World!"
+Print --> 2x --> "Hello" --> (newline) --> "World!" --> "Hello" --> (newline) --> "World!"
 
-While this last example may not have much practical use, concantenations are particularly helpful when working with...
-
-
-PART THREE
-
-Variables, as you may know, are just anything used to assign a value to.
-Look at the following example:'''
+No spaces were added in, which is why anything not told to be printed on a newline appears combined. Concantenation can be a powerful tool, and you can really see the 
+benefits when working with...'''
 
 
-#UNCOMMENT AND RUN THE FOLLOWING#
+
+#################################################################################################################################################################
+#################################################################################################################################################################
+#########################################################                    PART THREE                      ####################################################
+#################################################################################################################################################################
+#################################################################################################################################################################
+
+
+'''Variables!
+
+As you may remember from math class, variables are just objects used to assign a value. Think of them almost like containers, like a barrel full of water. You can put
+a big label that says "WATER" on the barrel to represent its contents. Let's jump right in and look at some examples.
+UNCOMMENT AND RUN THE FOLLOWING CODE'''
+      
+      #a = 1
+      #b = 2
+      #c = a + b
+      #print(c)
+      
+'''Just like in math class, we assigned numerical values to variables, then were able to add those variables together to produce a sum. Unlike math class, however, is 
+how the result is written. Notice here that we wrote "c = a + b" rather than "a + b = c". This is because Python needs to have an object before something can be assigned
+to it. You need to set the variable before it can have a value. Think again about that barrel of water; you wouldn't be able to put the water inside if you didn't 
+already have the barrel ready.
+
+We can also assign different values, such as strings, to variables.
+UNCOMMENT AND RUN THE FOLLOWING CODE'''
+
+
 # x = "Hello"
 
 # y = "World!"
@@ -260,13 +308,8 @@ Look at the following example:'''
 # print(x + y)
 
 
-'''We defined x and y by setting them equal to a string, but they can be set to many different types of objects. 
-
-NOTE: "=" and "==" are two completely different operators! = sets the value of one object to something else, while == is a logical operator that check if something
-is equal to something else. We wil explore the == operator in the next lesson, so stick to = for now.
-
-Python saw the = operator and understood that these were variables were assigned strings. It then concantenated the values that were assigned to the variables. 
-Notice, however, that the strings are mashedtogether without any space. This is because Python directly concantenates the values that are given. 
+'''Python assigned the strings as values for the variables then concantenated those values together. Notice, however, that the strings are mashedtogether without any 
+space. This is because as demonstrated earlier, Python directly concantenates the values that are given. 
 So how can we add spaces to make it more readable? There are two main ways to do this:'''
 
 #UNCOMMENT AND RUN THE FOLLOWING#
@@ -278,14 +321,22 @@ So how can we add spaces to make it more readable? There are two main ways to do
 # print(x + " " + y)
 
 
-'''With the first method, we added a space simply by adding whitespace to the end of the first string. This could also have been done by "Hello" + " World!"
-Because there was no room to add whitespace to the second expression, we needed to concantenate an additional whitespace.
+'''With the first method, we did what we covered earlier and simply added a space to the end of the first string literal. This could also have been done by 
+"Hello" + " World!" since both literals are butted together no matter what. But what about the second example? Because there was no room to add whitespace here, we 
+needed to concantenate an additional whitespace.
 
-NOTE: " " is whitespace, "" is an empty string. This is very important, as you will sometimes need to pass empty strings to be changed later.
+IMPORTANT!: 
+" " (quotes with a space) is whitespace, while "" (quotes with no space) is an empty string. This is because, as we mentioned, whitespace is treated as part of the
+string literal when within the containers. An empty string is literally a string that contains no value. 
+UNCOMMENT AND RUN THE FOLLOWING CODE'''
+      
+      #print("Hello" + "" + "World!")
+      
+'''Notice how there was no space between the outer strings? This is because the string in the middle had no value, so nothing was printed in that space.
 
 
-So what if we need to perform an operation where we have two different character types? You can perform type conversion on a character type in order to change the
-way it is read by Python.
+Now, we know we can't combine different object types, but sometimes you will need to! So what do we do? You can perform type conversion on some objects in order to 
+change their class.
 Below is an example of type conversion, utilizing the other topics covered earlier. Refer to the notes if you have questions about the function.'''
 
 
@@ -297,35 +348,32 @@ Below is an example of type conversion, utilizing the other topics covered earli
 # print("Your name is " + x + " and you are " + str(y) + " years old.")
 
 
-'''Our y variable was an integer, which would normally not be able to be concantenated to the strings, but by wrapping the variable in str(), we told Python to read the
-variable as a string instead of an integer.
+'''Our y variable was an integer, which would normally not be able to be concantenated to the strings, but by wrapping the variable in str(), we overrode Python's 
+inherent classification and told it to read the variable as a string instead of an integer. You can do the same thing with integers.
+UNCOMMENT AND RUN THE FOLLOWING CODE'''
+      
+#x = "2"
+#y = "3"
+#print(int(x) + int(y))
 
-Now, let's learn how to do all of this more efficiently. We can do this by using an f-string, which is shorthand for formatted string. An f-string takes values and 
-automatically formats them, handling differing object types and accounts for whitespace. Run the following code and see what happens.
-'''
+''' Here, we converted the strings to integers and were able to perform arithmetic on them. 
 
-#UNCOMMENT AND RUN THE FOLLOWING#
+Let's be honest, all this type conversion and concantenation can be a bit overwhelming, especially in our "Joe", "23" example. So is there an easier way to do this 
+more effectively? There sure is!
+
+We can save ourselves a lot of typing and conversion by simply using an f-string, which is shorthand for formatted string. An f-string takes certain values and 
+automatically formats them, letting you type the string like normal. 
+UNCOMMENT AND RUN THE FOLLOWING CODE'''
+
 #x = "Joe"
 #y = 23
 
-#print(f"Your name is {x} and you are {y} years old.")
+#print(f"Your name is {x} and you are {y} years old.\nNice to meet you!")
 
-'''Way easier, right? With an f-string, all we had to do was insert braces with the variable name in the same place we would have normally placed the value. This
-not only saves a bunch of time, but also allows you to do things like write a string before you know what some of the values will be
+'''Way easier, right? By placing an "f" before the quotes, we told Python this was going to be a formatted string. After that, all we had to do was insert braces with 
+the variable name wherever we wanted the value in the string. This not only saves a bunch of time, but cuts out a lot of the clutter.
 
-Even though it was only three lines, the code above uses strings, integers, variables, and operators to acheive its function. Let's practice this a little more, but 
-place everything inside a function.
-'''
+You may not have noticed, but the code above uses strings, integers, variables, operators, regular expressions, and f-strings! Whew! In just three lines we've combined 
+most of the topics we've learned throughout this lesson. 
 
-#UNCOMMENT AND RUN THE FOLLOWING#
-# def func():
-# 	x = "Joe"
-# 	y = 23
-
-# 	message = ("Your name is " + x + " and you are " + str(y) + " years old.")
-# 	print(message)
-
-# func()
-
-'''Pretty cool! We're not going to cover the formatting of functions here, though. The next lesson will cover functions more in-depth and will also begin to cover 
-basic logic functions.'''
+Pretty cool! In the next lesson, we're really going to start doing the cool stuff when we begin working with functions and logic!'''
