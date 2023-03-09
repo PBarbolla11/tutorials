@@ -309,9 +309,9 @@ UNCOMMENT AND RUN THE FOLLOWING CODE'''
 
 '''Python assigned the strings as values for the variables then concantenated those values together. Notice, however, that the strings are mashedtogether without any 
 space. This is because as demonstrated earlier, Python directly concantenates the values that are given. 
-So how can we add spaces to make it more readable? There are two main ways to do this:'''
+So how can we add spaces to make it more readable? There are two main ways to do this:
+UNCOMMENT AND RUN THE FOLLOWING CODE'''
 
-#UNCOMMENT AND RUN THE FOLLOWING#
 # print("Hello " + "World!")
 
 # x = "Hello"
