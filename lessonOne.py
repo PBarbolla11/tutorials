@@ -40,11 +40,11 @@ explore this further.
 
 In order to help illustrate the concept we just learned, let's run our first program!
 
-UNCOMMENT AND RUN THE FOLLOWING CODE
 Here's a tip: You can comment or uncomment a line by adding and removing the # symbol from the beginning of the line, but you can also select the line you are working
-on by triple clicking, then hit Ctrl + / to comment or uncomment the whole line!'''
+on by triple clicking, then hit Ctrl + / to comment or uncomment the whole line!
 
-# IMPORTANT!!!! REMEMBER TO RE-COMMENT THE CODE AFTER YOU RUN IT! IF YOU LEAVE CODE UNCOMMENTED IN THIS LESSON IT WILL BREAK THE OTHER EXAMPLES. DO THIS EACH TIME!
+IMPORTANT!!!! REMEMBER TO RE-COMMENT THE CODE AFTER YOU RUN IT! IF YOU LEAVE CODE UNCOMMENTED IN THIS LESSON IT WILL BREAK THE OTHER EXAMPLES. DO THIS EACH TIME!
+UNCOMMENT AND RUN THE FOLLOWING CODE'''
 
 #print("Hello World!")
 
