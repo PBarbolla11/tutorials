@@ -152,7 +152,7 @@ with multiple single quotes.
 UNCOMMENT AND RUN THE FOLLOWING CODE'''
 
 
-print("He's always saying there's always something to learn)
+#print("He's always saying there's always something to learn)
       
 
 '''Again, the single quotes were contained within double quotes, so we were fine. But what if for some reason we needed to use both types? Let's look at an example
