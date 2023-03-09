@@ -119,7 +119,7 @@ WRITE YOUR FUNCTION BELOW THEN COMMENT IT OUT AFTER RUNNING IT'''
 
 
 '''Congratulations! You've just written your first Python program!
-Again,it may seem like a very trivial thing, just printing a few words, but defining objects and performing functions on them is the definition of what OOP is.
+Again, it may seem like a very trivial thing, just printing a few words, but defining objects and performing functions on them is the definition of what OOP is.
 
 Ok, feeling good? Take a break and stretch if you need to. Always remember to be aware of your posture and not sitting in one spot for extended periods of time!
 
