@@ -1,4 +1,3 @@
-
 '''There are a few object types that we will be focusing on in this short lesson:
 
 1. Strings = A string of characters used to make words - str()
