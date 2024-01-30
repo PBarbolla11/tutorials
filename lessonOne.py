@@ -69,8 +69,7 @@ UNCOMMENT AND RUN THE FOLLOWING CODE'''
 '''As you can see, when this code is run, the terminal shows "SyntaxError: invalid syntax". What does that mean? 
 
 Syntax refers to the way that the program is written and read by the interpreter. As is the case with many human languages, programming languages may be written and read
-in many different ways, as well. While you don't have cases where code is written right to left such as languages like Arabic or Hebrew, the way you structure code may
-be very different. Python, and many other programming languages, read just like English, from left to right and top to bottom. In Lesson Two, we will explore syntax 
+in many different ways, as well. The interpreter will read the code the same way you read your language so, if you are writing in English, the code is also read by the interpreter left to right and top to bottom. In Lesson Two, we will explore syntax 
 much more in depth when we talk about functions.
 
 You'll notice that only the word "Hello" was highlighted here and not "World!". This is because in this case, Python has read the whitespace between these characters
